@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+main {
+    flex: 1 0 auto;
+    padding: 40px 0;
+}
+select {
+    display: block;
+}
+.collection-item .form {
+    margin: 0;
+}
+.collection-item.editing .form,
+.collection-item .text {
+    display: block;
+}
+.collection-item.editing .text,
+.collection-item .form {
+    display: none;
+}
+
+.collection-item .material-icons {
+    float: right;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.tooltipped {
+    position: relative;
+}
+.tooltipped .material-tooltip {
+    cursor: default;
+    max-width: 200px;
+}
+.tooltipped:hover .material-tooltip {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: visiblePainted;
+}
+.table-filter {
+    margin: 0 0 30px;
+}
+.table-filter:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+.table-filter .left {
+    white-space: nowrap;
+}
+.table-filter select {
+    display: inline-block;
+}
+.form-new input,
+.form-new select {
+    display: inline-block;
+    vertical-align: middle;
+    width: auto!important;
+    margin: 0!important;
+}
+
+table th:nth-child(1) {
+    width: 130px;    
+}
+table th:nth-child(2) {
+    width: auto;
+}
+table th:nth-child(3) {
+    width: 190px;    
+}
+table th:nth-child(4) {
+    width: 190px;    
+}
+table th:nth-child(5) {
+    width: 100px;    
+}
